@@ -42,12 +42,13 @@ public class Zadatak4 {
         System.out.print("Unesite y za M: ");
         int y3 = s.nextInt();
 
-
-        if(x3 >= x1 && x3 <= x2 && y3 >= y2 && y3 <= y1){
-            System.out.print("Kliknuto je unutar forme");
-        }
-        else{
-            System.out.print("Nije kliknuto unutar forme");
+        if(x1 < x2 && y2<y1){
+            if(x3 >= x1 && x3 <= x2 && y3 >= y2 && y3 <= y1){
+                System.out.print("Kliknuto je unutar forme");
+            }
+            else{
+                System.out.print("Nije kliknuto unutar forme");
+            }
         }
 
     }
