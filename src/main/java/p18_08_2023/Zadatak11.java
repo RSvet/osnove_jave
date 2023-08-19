@@ -14,8 +14,8 @@ public class Zadatak11 {
 
         int procentatPregleda = trenutnoVreme*100/duzinaSec;
 
-         for(int i=0; i<=duzinaSec; i++){
-             if(i<=procentatPregleda){
+         for(int i=0; i<100; i++){
+             if(i<procentatPregleda){
                  System.out.print("*");
              }
              else {
