@@ -1,4 +1,4 @@
-package d07_09_2023;
+package d07_09_2023.zadatak1;
 
 public class Zadatak1 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package d07_09_2023;
+package d07_09_2023.zadatak3;
 
 public class Proizvod {
     public String naziv;

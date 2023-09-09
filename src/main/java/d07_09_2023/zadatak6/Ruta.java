@@ -1,4 +1,4 @@
-package d07_09_2023;
+package d07_09_2023.zadatak6;
 
 public class Ruta {
     public String polaznaTacka;

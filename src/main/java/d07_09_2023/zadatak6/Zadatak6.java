@@ -1,4 +1,9 @@
-package d07_09_2023;
+package d07_09_2023.zadatak6;
+
+import d07_09_2023.zadatak6.Dostava;
+import d07_09_2023.zadatak6.Ruta;
+import d07_09_2023.zadatak6.Vozac;
+import d07_09_2023.zadatak6.Vozilo;
 
 public class Zadatak6 {
     public static void main(String[] args) {
