@@ -2,6 +2,7 @@ package p15_09_2023;
 
 public class UvodUNasledjivanje {
     public static void main(String[] args) {
+
         Auto a = new Auto();
 
         Kamion k = new Kamion();

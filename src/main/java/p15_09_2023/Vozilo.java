@@ -1,6 +1,6 @@
 package p15_09_2023;
 
-public class Vozilo {
+public abstract class Vozilo {
     protected String registracija;
     protected String marka;
     protected int brzina;
@@ -40,11 +40,13 @@ public class Vozilo {
     public void koci(){
         this.brzina-=10;
     }
-    public void stampaj(){
-        System.out.println("Registracija: "+this.registracija);
-        System.out.println("Brzina: "+this.brzina);
-        System.out.println("Marka: "+this.marka);
-    }
+//    public void stampaj(){
+//        System.out.println("Registracija: "+this.registracija);
+//        System.out.println("Brzina: "+this.brzina);
+//        System.out.println("Marka: "+this.marka);
+//    }
+
+    public abstract void stampaj();
 
 
 

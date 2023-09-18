@@ -21,7 +21,15 @@ public class Kamion extends Vozilo {
     }
     @Override
     public void stampaj(){
-      super.stampaj();
+        System.out.println("Registracija: "+this.registracija);
+        System.out.println("Brzina: "+this.brzina);
+        System.out.println("Marka: "+this.marka);
         System.out.println("Nosivost: "+this.nosivost);
     }
+
+//    @Override
+//    public void stampaj(){
+//        super.stampaj();
+//        System.out.println("Nosivost: "+this.nosivost);
+//    }
 }
