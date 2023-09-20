@@ -27,19 +27,17 @@ public class Korpa {
                 ambalaze.remove(ambalaze.get(i));
         }
     }
-    private List<Double> cenaSaPopustom(int popust){
+    private List<Double> cenaSaPopustom(double popust){
+        double popustPoArtiklu = popust/this.ambalaze.size();
         double cenaPopust = 0;
         List<Double>ceneSaPopustom = new ArrayList<>();
         for (int i = 0; i < ambalaze.size(); i++) {
-
-            if(ambalaze.get(i).cena()>=popust){
-                cenaPopust = ambalaze.get(i).cena()-popust;
+            if(ambalaze.get(i).cena()>=popustPoArtiklu){
+                cenaPopust = ambalaze.get(i).cena()-popustPoArtiklu;
             }
-
             else {
                 cenaPopust = 0;
             }
-
           ceneSaPopustom.add(cenaPopust);
         }
         return ceneSaPopustom;

@@ -10,7 +10,7 @@ U glavnom programu kreirati jednu Korpu i u nju dodati nekoliko Ambalaza razlici
 
         Korpa korpa = new Korpa();
 
-        SuperKartica kartica = new SuperKartica("123 456 85224","Pera Peric",20);
+        SuperKartica kartica = new SuperKartica("123 456 85224","Pera Peric",200);
 
         Ambalaza prvaAmbalaza = new StaklenaAmbalaza("328232-2823", "pivo", 400, 500, 20,true, 120.99 );
         Ambalaza drugaAmbalaza = new Tetrapak("741-85369", "mleko",200,250, false,150);
