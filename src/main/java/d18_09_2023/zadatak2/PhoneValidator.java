@@ -33,7 +33,7 @@ Ukoliko se npr za broj telefona unese vrednost 5a5 555 55
     @Override
     public ValidationResult validate() {
         ValidationResult res = new ValidationResult();
-        int counter=0;
+        boolean notOnlyNumbers = false;
         String phone = "";
         if(this.number.startsWith("+")){
             phone = this.number.substring(1);
@@ -41,9 +41,9 @@ Ukoliko se npr za broj telefona unese vrednost 5a5 555 55
         else phone = this.number;
 
         char[] chars = phone.toCharArray();
-        for (int i = 0; i <chars.length ; i++) {
-            if(!Character.isDigit(chars[i])&& chars[i]!=' '){
-                counter++;
+        for (char aChar : chars) {
+            if (!Character.isDigit(aChar) && aChar != ' ') {
+                notOnlyNumbers = true;
             }
         }
 
@@ -53,7 +53,7 @@ Ukoliko se npr za broj telefona unese vrednost 5a5 555 55
         if(this.number.contains(" ")){
             res.addError("Phone number cannot contain spaces");
         }
-        if(counter>0){
+        if(notOnlyNumbers){
             res.addError("Phone number can only contain numbers");
         }
         return res;

@@ -38,22 +38,23 @@ public class PasswordValidator extends Validator {
     @Override
     public ValidationResult validate() {
         ValidationResult res = new ValidationResult();
-        int counter=0;
-        int counter2 = 0;
+        boolean isUpperCase = false;
+
+
 
         for (int i = 0; i < this.password.length(); i++) {
             if(Character.isUpperCase(this.password.charAt(i)))
-                counter++;
+                isUpperCase = true;
         }
-        boolean isUpperCase = counter>0;
 
+        boolean hasNumber=false;
         char[] chars = this.password.toCharArray();
         for(char c : chars){
             if(Character.isDigit(c)){
-                counter2++;
+               hasNumber=true;
             }
         }
-        boolean hasNumber = counter2>0;
+
 
         if(!this.password.contains("@") && !this.password.contains("#") && !this.password.contains("/") && !this.password.contains("*")){
             res.addError("Password must contain at least one special character @, # or *");
